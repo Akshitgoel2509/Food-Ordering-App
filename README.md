@@ -1,7 +1,7 @@
 
 # LetsEat
 
- This App is built using MERN stack with Bootstrap for styling, React (Redux and React-Router) as frontend , MongoDb as database , Node & Express as backend . 
+ This is an Food Delivery Website which is built using MERN stack with Bootstrap for styling, React (ContextApi and React-Router) as Frontend , MongoDb as database , Node & Express as Backend . 
 
 
 ## Installation
