@@ -39,7 +39,7 @@ nodemon run
     
 ## Tech Stack
 
-**Client:** React, Redux, Bootstrap, Material UI
+**Client:** React, Bootstrap, Material UI
 
 **Server:** Node, Express, Jwt and Bcrypt
 
