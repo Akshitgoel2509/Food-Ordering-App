@@ -11,8 +11,6 @@ export default function MyOrder() {
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
         await fetch("http://localhost:4000/api/myOrderData", {
-            // credentials: 'include',
-            // Origin:"http://localhost:3000/login",
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -24,13 +22,6 @@ export default function MyOrder() {
             let response = await res.json()
             await setorderData(response)
         })
-
-
-
-        // await res.map((data)=>{
-        //    console.log(data)
-        // })
-
 
     }
 
@@ -44,7 +35,8 @@ export default function MyOrder() {
                 <Navbar />
             </div>
 
-            <div className='container'>
+            <div className='container mt-4'>
+                  <div className='fs-1'>My Orders </div>
                 <div className='row'>
 
                     {orderData != {} ? Array(orderData).map(data => {
@@ -55,7 +47,7 @@ export default function MyOrder() {
                                         item.map((arrayData) => {
                                             return (
                                                 <div>
-                                                    {arrayData.Order_date ? <div className='m-auto mt-5'>
+                                                    {arrayData.Order_date ? <div className='m-auto mt-4'>
 
                                                         {data = arrayData.Order_date}
                                                         <hr />
