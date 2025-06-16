@@ -41,7 +41,7 @@ nodemon run
 
 **Client:** React, Bootstrap, Material UI
 
-**Server:** Node, Express, Jwt and Bcrypt
+**Server:** Node, Express, Mongoose, Jwt and Bcrypt(authentication)
 
 **Database:** MongoDB
 
